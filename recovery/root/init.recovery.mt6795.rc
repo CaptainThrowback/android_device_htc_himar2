@@ -1,0 +1,6 @@
+on boot
+    start chargeled
+
+service chargeled /sbin/chargeled
+    disabled
+    seclabel u:r:healthd:s0
