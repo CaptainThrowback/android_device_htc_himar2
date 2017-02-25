@@ -62,6 +62,11 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_THEME := portrait_hdpi
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_INCLUDE_CRYPTO := true
+TW_CRYPTO_USE_SYSTEM_VOLD := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
 TW_HAS_DOWNLOAD_MODE := true
+
+# Vendor Init
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_himar2
